@@ -1,0 +1,36 @@
+#Question 1
+#Student Name: Jason Daly
+
+print("Welcome to the driving licence eligibility checker") #(i) welcomes the user.
+
+name = input("What is your name? : ") #(v) asks the users name
+
+age=int(input("What age are you?")) #The website is asking the user their age to see if they are eligible for a licence #(ii)
+
+print("you entered " , age ) #(iii) displays the users age.
+
+if (74 >= age >= 17):
+    print( name , "You are entitled to apply for a driving licence.") #if the age is between 17 and 74 inclusive it will allow them
+elif (age >74):
+    print( name , "You are entitled to apply for a three year driving licence") #(vi) if the age is above 74 they can get a 3 year licence
+else:
+    print( name , "You are not entitled to apply for a driving licence") #(iv) if the age is below 17 they cannot apply
+
+
+
+
+#Question 2
+#Student Name: Jason Daly
+import random
+
+num = random.randint(1, 51) # generates a random number between 1 and 50.
+
+while num: #loops the code so it will continue to ask until terminated.
+    guess = int(input("guess a number between 1 and 50: ")) #it asks the user to guess the random number between 1 and 50.
+    if guess == num:
+        print("Correct!!") #when the users guess is correct it will tell them and terminate.
+        break
+    elif guess > num:
+        print("Too high, try again") #when the users guess is too high it will tell them and let them guess again.
+    else:
+        print("Too low, try again") # when the users guess is too low it will tell them and let them guess again.
